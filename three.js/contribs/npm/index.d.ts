@@ -1,4 +1,5 @@
 // TODO: continue and replace 'any'-s to exact types.
+import { Matrix4 } from "three";
 
 export class ARClickability {
   constructor(sourceElement: any);
@@ -6,7 +7,7 @@ export class ARClickability {
   computeIntersects: (DOMEvent: any, objects: any) => any;
   onResize: () => any;
   update: () => any;
-};
+}
 
 export class ArBaseControls {
   constructor(object3d: any);
@@ -17,7 +18,7 @@ export class ArBaseControls {
   dispatchEvent: (event: any) => {};
   name: () => {};
   update: () => {};
-};
+}
 
 export class ArMarkerCloak {
   constructor(videoTexture: any);
@@ -43,8 +44,7 @@ export class ArMultiMarkerControls {
   constructor(arToolkitContext: any, object3d: any, parameters: any);
 }
 
-export const ArMultiMarkerUtils = {
-}
+export const ArMultiMarkerUtils: any;
 
 export class ArSmoothedControls {
   constructor(object3d: any, parameters: any);
@@ -52,6 +52,11 @@ export class ArSmoothedControls {
 
 export class ArToolkitContext {
   constructor(parameters: any);
+  init: (parameters: any) => {};
+  update: (parameters: any) => {};
+  getProjectionMatrix: () => Matrix4;
+  arController: any;
+  static baseURL: string;
 }
 
 export class ArToolkitProfile {
@@ -60,6 +65,11 @@ export class ArToolkitProfile {
 
 export class ArToolkitSource {
   constructor(parameters: any);
+  init: (parameters: any) => {};
+  onResize: () => {};
+  copySizeTo: (parameters: any) => {};
+  ready: boolean;
+  domElement: any;
 }
 
 export class ArVideoInWebgl {
