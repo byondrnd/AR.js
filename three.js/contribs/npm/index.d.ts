@@ -51,9 +51,9 @@ export class ArSmoothedControls {
 }
 
 export class ArToolkitContextParameters {
-  cameraParametersUrl: string;
-  detectionMode: string;
-  patternRatio: number;
+  cameraParametersUrl?: string;
+  detectionMode?: string;
+  patternRatio?: number;
 }
 
 export class ArToolkitContext {
