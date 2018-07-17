@@ -50,8 +50,14 @@ export class ArSmoothedControls {
   constructor(object3d: any, parameters: any);
 }
 
+export class ArToolkitContextParameters {
+  cameraParametersUrl: string;
+  detectionMode: string;
+  patternRatio: number;
+}
+
 export class ArToolkitContext {
-  constructor(parameters: any);
+  constructor(parameters: ArToolkitContextParameters);
   init: (parameters: any) => {};
   update: (parameters: any) => {};
   getProjectionMatrix: () => Matrix4;
