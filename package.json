@@ -1,5 +1,5 @@
 {
-  "name": "ar.js",
+  "name": "@byondrnd/ar.js",
   "version": "1.6.0",
   "description": "Efficient Augmented Reality for the Web",
   "main": "three.js",
